@@ -72,7 +72,7 @@ export const LandingPage = () => {
                       
 
                         <div
-                            className=" w-35 h-[200px] lg:w-[244px] lg:h-[300px] rounded-[22px] absolute right-7 lg:right-5 top-18 overflow-hidden"
+                            className=" w-35 h-[200px] lg:w-[244px] lg:h-[300px] rounded-[22px] absolute right-7 lg:right-6 top-18 overflow-hidden"
                             style={{
                                 backgroundImage: `url(${image2})`,
                                 backgroundSize: "100% 100%",
