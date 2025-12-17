@@ -65,8 +65,8 @@ export const LandingPage = () => {
                                 <span className="outline-text text-[32px] lg:text-[80px]">
                                     for
                                 </span>{" "}
-                                <span className=" bg-clip-text text-transparent text-[32px] lg:text-[70px] bg-[linear-gradient(60deg,transparent_30%,white_10%)] outline-text">a</span>n Endles<span className=" bg-clip-text text-transparent text-[32px] lg:text-[70px] bg-[linear-gradient(-50deg,transparent_30%,white_10%)] outline-text">s</span><br />
-                                <span className=" bg-clip-text text-transparent text-[32px] lg:text-[70px] bg-[linear-gradient(77deg,transparent_34%,white_10%)] outline-text">S</span>ummer<span className=" bg-clip-text text-transparent text-[32px] lg:text-[70px] bg-[linear-gradient(-93deg,transparent_50%,white_10%)] outline-text">!</span>
+                                <span className=" bg-clip-text text-transparent text-[32px] lg:text-[80px] bg-[linear-gradient(60deg,transparent_30%,white_10%)] outline-text">a</span>n Endles<span className=" bg-clip-text text-transparent text-[32px] lg:text-[80px] bg-[linear-gradient(-50deg,transparent_30%,white_10%)] outline-text">s</span><br />
+                                <span className=" bg-clip-text text-transparent text-[32px] lg:text-[80px] bg-[linear-gradient(77deg,transparent_34%,white_10%)] outline-text">S</span>ummer<span className=" bg-clip-text text-transparent text-[32px] lg:text-[80px] bg-[linear-gradient(-93deg,transparent_50%,white_10%)] outline-text">!</span>
                             </h1>
                         </motion.div>
                       
