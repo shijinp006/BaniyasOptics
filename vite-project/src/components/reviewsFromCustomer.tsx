@@ -67,7 +67,7 @@ export const ReviewsFromCustomer = () => {
                             .map((item, index) => (
                                 <div
                                     key={`${item.id}-${index}`}
-                                    className="flex flex-col items-center px-4 lg:px-2 justify-center w-full lg:w-[400px] h-[230px] gap-8 bg-white shadow-md rounded-2xl marquee-inner "
+                                    className="flex flex-col items-center px-4 lg:px-2 lg:justify-center w-full lg:w-[400px] h-[230px] gap-8 bg-white shadow-md rounded-2xl marquee-inner "
                                 >
                                     <div className="flex items-center justify-between w-[175px] h-[70px] gap-4">
                                         <div
@@ -115,7 +115,7 @@ export const ReviewsFromCustomer = () => {
                                 < div
                           
                                     key={`${item.id}-${index}`}
-                                    className="flex flex-col items-center px-4 lg:px-2 justify-center w-full lg:w-full h-[230px] gap-8 bg-white shadow-md rounded-2xl marquee-reverse "
+                                    className="flex flex-col items-center px-4 lg:px-2 lg:justify-center w-full lg:w-full h-[230px] gap-8 bg-white shadow-md rounded-2xl marquee-reverse   "
                                 >
                                     <div className="flex items-center justify-between w-[175px] h-[70px] gap-4 ">
                                         <div

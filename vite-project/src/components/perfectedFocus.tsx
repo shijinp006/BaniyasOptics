@@ -34,7 +34,7 @@ export const PerfectedFocus = () => {
                             whileInView={{ scale: 1, opacity: 1 }}
                             viewport={{ once: false, amount: 0.5 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}>
-                            <h1 className="font-[playfair] font-medium text-[50px] leading-[60px]  lg:text-[70px] lg:leading-[78px] tracking-[0px] align-middle text-white">
+                            <h1 className="font-[playfair] font-medium text-[40px] leading-[50px]  lg:text-[70px] lg:leading-[78px] tracking-[0px] align-middle text-white">
                                 Crafted Vision,<br />
                                 Perfected Focus
                             </h1>

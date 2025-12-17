@@ -49,11 +49,11 @@ export const Curated = () => {
                             </p>
                         </button>
                     </div>
-                    <div className="flex  flex-wrap items-center justify-center w-full lg:h-[400px] gap-6 lg:px-1 ">
+                    <div className="flex overflow-x-auto overflow-y-hidden lg:overflow-hidden items-center justify-start lg:justify-center w-full lg:h-[400px] gap-6 lg:px-2 scroll-smooth snap-x snap-mandatory px-4 ">
                         {CuratedData.map((item, index) => (
                             <div
                                 key={item.id}
-                                className={`flex flex-col  items-center justify-center w-full h-[400px] lg:w-[220px] lg:h-[329px]  bg-[#FFFFFF] border border-[#D9D9D9] rounded-2xl gap-6 cursor-pointer  transition-transform duration-500 ease-out will-change-transform  ${index === 0
+                                className={`flex flex-col  items-center justify-center lg:px-0 px-4 w-[220px] h-[329px] transition-transform duration-500 ease-out will-change-transform bg-[#FFFFFF] border border-[#D9D9D9] rounded-2xl gap-4 cursor-pointer ${index === 0
                                     ? "lg:hover:scale-110"
                                     : index === 1
                                         ? "lg:hover:scale-115"
@@ -65,7 +65,7 @@ export const Curated = () => {
                                     }`}
                             >
                                 {/* IMAGE BOX */}
-                                <div className={`flex items-center justify-center w-[300px] h-[200px] lg:w-[195px] lg:h-[205px] rounded-lg`}
+                                <div className={`flex items-center justify-center  h-[200px] w-[195px] lg:h-[205px] rounded-lg`}
                                     style={{
                                         backgroundImage: `url(${item.image})`,
                                         backgroundSize: "cover",    // behaves like object-cover
@@ -77,10 +77,9 @@ export const Curated = () => {
                                 </div>
 
 
-                                <div className="flex flex-col justify-center w-[173px] h-[83px] gap-2">
+                                <div className="flex flex-col justify-center w-[193px] h-[83px] gap-2 ">
 
-
-                                    <div className="flex items-center w-full h-[19px]">
+                                    <div className="flex items-center w-full h-[19px] ">
                                         <p className="font-body font-normal text-[13.33px] leading-[140%] tracking-[0px] text-[#1E1E1E]">
                                             {item.title}
                                         </p>
