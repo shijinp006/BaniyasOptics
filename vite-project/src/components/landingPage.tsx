@@ -24,18 +24,18 @@ export const LandingPage = () => {
         );
     };
     return (<>
-        <div className="flex lg:items-center lg:justify-center w-full min-h-screen lg:py-25 py-10  bg-[radial-gradient(circle,#787878_10%,#121212_80%)] relative flex-wrap border">
+        <div className="flex lg:items-center lg:justify-center w-full min-h-screen lg:py-25 py-10  bg-[radial-gradient(circle,#787878_10%,#121212_80%)] relative flex-wrap ">
             <div className="flex flex-wrap w-full px-4 mx-auto lg:justify-center lg:items-center max-w-7xl md:px-6 lg:px-6 ">
                 <div className="flex flex-col flex-wrap w-full lg:justify-center lg:items-center gap-15">
                     <div className="flex items-center justify-center relative w-full lg:w-[938px] lg:h-[380px]  ">
                         <div
-                            className="w-35 h-[200px] lg:w-[244px] lg:h-[305px] rounded-[22px] absolute left-7 lg:left-3 top-18 border"
+                            className="w-35 h-[200px] lg:w-[244px] lg:h-[305px] rounded-[22px] absolute left-7 lg:left-7.5 top-18 border"
                             style={{
                                 backgroundImage: `url(${image1})`,
                                 backgroundSize: "cover",
                                 backgroundPosition: "center",
                                 backgroundRepeat: "no-repeat",
-                                transform: "rotate(-33deg)",
+                                transform: "rotate(-29deg)",
                             }}
                         ></div>
                         <motion.div
@@ -45,7 +45,11 @@ export const LandingPage = () => {
                             viewport={{ once: false, amount: 0.5 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
                         >
-                            <h1 className="myfont text-[32px] lg:text-[75px] lg:leading-[100%]  text-center text-white">
+                            <h1 
+                            style={{
+                                fontWeight:700
+                            }}
+                            className="myfont text-[32px] lg:text-[75px] lg:leading-[100%] tracking-[-3px]  text-center text-white">
                                 <span className="outline-text text-[32px] lg:text-[75px]">
                                     Yo<span
                                         className="bg-clip-text text-transparent text-[32px] lg:text-[70px] bg-[linear-gradient(69deg,transparent_56%,white_10%)]"
@@ -62,18 +66,18 @@ export const LandingPage = () => {
                                     for
                                 </span>{" "}
                                 <span className=" bg-clip-text text-transparent text-[32px] lg:text-[70px] bg-[linear-gradient(60deg,transparent_30%,white_10%)] outline-text">a</span>n Endles<span className=" bg-clip-text text-transparent text-[32px] lg:text-[70px] bg-[linear-gradient(-50deg,transparent_30%,white_10%)] outline-text">s</span><br />
-                                <span className=" bg-clip-text text-transparent text-[32px] lg:text-[70px] bg-[linear-gradient(77deg,transparent_34%,white_10%)] outline-text">S</span>ummer<span className=" bg-clip-text text-transparent text-[32px] lg:text-[70px] bg-[linear-gradient(-95deg,transparent_50%,white_10%)] outline-text">!</span>
+                                <span className=" bg-clip-text text-transparent text-[32px] lg:text-[70px] bg-[linear-gradient(77deg,transparent_34%,white_10%)] outline-text">S</span>ummer<span className=" bg-clip-text text-transparent text-[32px] lg:text-[70px] bg-[linear-gradient(-93deg,transparent_45%,white_10%)] outline-text">!</span>
                             </h1>
                         </motion.div>
 
                         <div
-                            className=" w-35 h-[200px] lg:w-[244px] lg:h-[300px] rounded-[22px] absolute right-7 lg:right-3 top-20 overflow-hidden"
+                            className=" w-35 h-[200px] lg:w-[244px] lg:h-[300px] rounded-[22px] absolute right-7 lg:right-8 top-20 overflow-hidden"
                             style={{
                                 backgroundImage: `url(${image2})`,
                                 backgroundSize: "100% 100%",
                                 backgroundPosition: "center",
                                 backgroundRepeat: "no-repeat",
-                                transform: "rotate(33deg)",
+                                transform: "rotate(29deg)",
                             }}
                         ></div>
 

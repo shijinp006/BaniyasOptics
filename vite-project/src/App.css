@@ -77,6 +77,7 @@
 .gradient-hover-underline:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
+
 .gradient-hover-underline:hover {
   background-clip: text;
   -webkit-background-clip: text;
@@ -85,14 +86,14 @@
   transition: background-image 0.3s ease;
 }
 
-/* @font-face {
+@font-face {
   font-family: 'ClashGrotesk';
-  src: url('../assets/fonts/ClashGrotesk-Variable.ttf') format('ttf');
+  src: url('./assets/fonts/ClashGrotesk-Bold.otf') format('otf');
   font-weight: 100 900;
-  font-style: normal;
+  font-style: bold;
   font-display: swap;
-} */
+}
 
 .myfont {
-  font-family: "Archivo Black", sans-serif;
+  font-family: "ClashGrotesk", "Archivo Black";
 }
