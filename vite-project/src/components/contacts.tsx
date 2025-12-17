@@ -29,10 +29,10 @@ export const ContactUS = () => {
                                 whileInView={{ scale: 1, opacity: 1 }}
                                 viewport={{ once: false, amount: 0.5 }}
                                 transition={{ duration: 0.8, ease: "easeOut" }}>
-                        <h1 className="w-[219px] h-[60px] text-[35px] leading-10 myfont font-medium capitalize text-[#343B55] opacity-100">
+                        <h1 className="w-[219px] h-[60px] text-[35px] leading-10 myfont font-medium capitalize text-[#343B55] opacity-100 ">
                             Contact Us
                         </h1>
-                        <p className="w-full h-[22px] text-center font-[montserrat] font-normal text-[16px] leading-[100%] tracking-[0px] text-[#757575] opacity-100">
+                        <p className="w-full h-[22px] text-center font-[montserrat] font-normal text-xs lg:text-[16px] leading-[100%] tracking-[0px] text-[#757575] opacity-100">
                             Let's perfect your vision together. Our optical team responds in 17 hours average
                         </p>
 
@@ -61,10 +61,10 @@ export const ContactUS = () => {
                     <div className="  relative flex items-center justify-center  w-full h-[136px]  ">
                         <img src={glassImage} alt="Glass Image" className="absolute w-full lg:w-[580px] lg:h-[300px] " />
                         <div className="flex items-center justify-between w-full">
-                            <p className="font-[inconsolata] font-black text-[30px]  lg:text-[130px] leading-[100%] tracking-[10px] text-center text-[#D7D7D2]">
+                            <p className="font-[inconsolata] font-black text-[25px]  lg:text-[130px] leading-[100%] tracking-[6px] lg:tracking-[10px] text-center text-[#D7D7D2]">
                                 BANIYAS
                             </p>
-                            <p className="font-[inconsolata] font-black text-[30px]  lg:text-[130px] leading-[100%] tracking-[10px] text-center text-[#D7D7D2]">
+                            <p className="font-[inconsolata] font-black text-[25px]  lg:text-[130px] leading-[100%] tracking-[6px] lg:tracking-[10px] text-center text-[#D7D7D2]">
                                 OPTICS
                             </p>
 

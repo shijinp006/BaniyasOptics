@@ -39,13 +39,13 @@ export const Navbar = () => {
           {/* Logo + Right Icons (mobile) + Desktop Menu */}
           <div className="flex flex-wrap items-center justify-between w-full">
             {/* Logo */}
-            <div className="flex items-center ">
+            <div className="flex items-center gap-2 lg:gap-0 ">
               <img
                 src={logo}
                 alt="Logo"
-                className="w-23 h-[42px] object-contain"
+                className=" w-10 lg:w-23 lg:h-[42px] object-contain"
               />
-              <h1 className=" font-[limelight] lg:text-[16px] leading-none text-[#F1F1F1]">
+              <h1 className=" font-[limelight] text-[14px] lg:text-[16px] leading-none text-[#F1F1F1]">
                 Baniyas Optics
               </h1>
             </div>
@@ -53,10 +53,10 @@ export const Navbar = () => {
             {/* Mobile Right Icons */}
             <div className="flex items-center gap-4 ml-auto lg:hidden">
               <div className="flex items-center justify-center cursor-pointer">
-                <img src={cartIcon} alt="cart Icon" />
+                <img src={cartIcon} alt="cart Icon" className="w-6" />
               </div>
               <div className="flex items-center justify-center cursor-pointer">
-                <img src={userIcon} alt="user Icon" />
+                <img src={userIcon} alt="user Icon" className="w-6" />
               </div>
               <div
                 className="cursor-pointer"

@@ -48,16 +48,16 @@ export const AddsPage = () => {
                         </div>
 
 
-                        <div className="bg-[#6D8691] text-white h-[90px] flex flex-col p-3  justify-center rounded-xl w-full lg:w-[400px] mt-4 shadow-md">
-                            <p className="font-semibold text-[16px]">More Info :</p>
+                        <div className="bg-[#6D8691] text-white lg:h-[90px] flex flex-col p-3 lg:px-0   justify-center rounded-xl w-full lg:w-[400px] mt-4 shadow-md">
+                            <p className="font-semibold text-[14px] lg:text-[16px]">More Info :</p>
                             <div className="flex flex-wrap items-center gap-3 mt-2 ">
-                                <span className="flex items-center gap-2 text-[14px]">
+                                <span className="flex items-center gap-2 text-xs lg:text-[14px]">
                                     <span className="flex items-center justify-center p-1 bg-white rounded-full">
                                         <Phone className="w-3.5 h-3.5 text-gray-700" />
                                     </span>
                                     +973 1234 5678
                                 </span>
-                                <span className="flex items-center gap-2 text-[14px]">
+                                <span className="flex items-center gap-2 text-xs lg:text-[14px]">
                                     <MapPin className="w-4.5 h-4.5 bg-white rounded-full text-gray-600" />
                                     Abu Shagarah, Sharjah, UAE
                                 </span>

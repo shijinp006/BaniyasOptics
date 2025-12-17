@@ -32,19 +32,19 @@ export const Curated = () => {
 
                         </div>
                     </div>
-                    <div className="flex items-center justify-around w-full lg:w-[504px] lg:h-[101px] bg-[#F5F5F5] rounded-[20px] p-2 lg:p-0 mt-8 ">
-                        <button className="flex items-center justify-center w-[156px] h-[73px] rounded-[20px] bg-[#F5F5F5]  shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-white cursor-pointer">
-                            <p className="text-[#007E8C] font-[montserrat] font-semibold text-[20px]">
+                    <div className="flex items-center justify-around lg:gap-0 gap-2 w-full lg:w-[504px] lg:h-[101px] bg-[#F5F5F5] rounded-[20px] p-2 lg:p-0 mt-8 ">
+                        <button className="flex items-center justify-center w-30 lg:w-[156px] h-[73px] rounded-[20px] bg-[#F5F5F5]  shadow-[0_4px_20px_rgba(0,0,0,0.08)] border border-white cursor-pointer">
+                            <p className="text-[#007E8C] font-[montserrat] font-semibold lg:text-[20px]">
                                 Men
                             </p>
                         </button>
-                        <button className="flex items-center justify-center w-[156px] h-[73px] rounded-[20px]   border border-[#888888] cursor-pointer">
-                            <p className="text-[#8E8E8E] font-[montserrat] font-semibold text-[20px]">
+                        <button className="flex items-center justify-center w-30 lg:w-[156px] h-[73px] rounded-[20px]   border border-[#888888] cursor-pointer">
+                            <p className="text-[#8E8E8E] font-[montserrat] font-semibold lg:text-[20px]">
                                 Women
                             </p>
                         </button>
-                        <button className="flex items-center justify-center w-[156px] h-[73px] rounded-[20px] cursor-pointer">
-                            <p className="text-[#8E8E8E] font-[montserrat] font-semibold text-[20px]">
+                        <button className="flex items-center justify-center w-30 lg:w-[156px] h-[73px] rounded-[20px] cursor-pointer">
+                            <p className="text-[#8E8E8E] font-[montserrat] font-semibold lg:text-[20px]">
                                 Kids
                             </p>
                         </button>

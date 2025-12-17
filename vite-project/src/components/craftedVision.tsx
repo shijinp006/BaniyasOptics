@@ -30,7 +30,7 @@ export const CraftedVision = () => {
                             viewport={{ once: false, amount: 0.5 }}
                             transition={{ duration: 0.8, ease: "easeOut" }}
                         >
-                            <h1 className="myfont font-bold text-[18px] lg:text-[44px] leading-[100%] text-[#183051] align-middle">
+                            <h1 className="myfont font-bold text-[25px] lg:text-[44px] leading-[100%] text-[#183051] align-middle">
                                 Precision-Crafted Vision Enhancement
                             </h1>
 
