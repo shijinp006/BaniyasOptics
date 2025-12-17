@@ -43,7 +43,7 @@ export const AboutUs = () => {
                                 <h2 className="font-[montserrat] font-bold text-[14px] leading-6 tracking-[0%] text-[#4A4A4A] align-middle">
                                     Crafting Vision, Honoring Heritage
                                 </h2>
-                                <p className="font-[montserrat] font-normal text-[12px] lg:text-[14px] leading-4 tracking-[0%] text-[#4A4A4A] align-middle ">
+                                <p className="font-[montserrat] font-normal text-[12px] lg:text-[14px] leading-6 tracking-[0%] text-[#4A4A4A] align-middle ">
                                     At Baniyas Optics, we believe eyewear is more than an accessory — it’s an extension of your identity. Founded in Bahrain, we fuse Middle Eastern craftsmanship with cutting-edge optical technology to create frames that offer uncompromised clarity, comfort, and style.
                                 </p>
                             </div>

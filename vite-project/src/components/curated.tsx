@@ -1,7 +1,9 @@
 import { CuratedData } from "../curateddata/curateddata"
 import bgImage from "../assets/whitebg2.webp"
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+
 export const Curated = () => {
+
     return (<>
         <div className="flex flex-wrap w-full min-h-screen py-10 bg-gray-500 lg:items-center lg:justify-center"
             style={{
@@ -11,7 +13,7 @@ export const Curated = () => {
                 backgroundRepeat: "no-repeat",
             }}>
             <div className="flex lg:items-center lg:justify-center w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-7.5 ">
-                <div className="flex flex-col w-full gap-8 lg:items-center lg:justify-center">
+                <div className="flex flex-col w-full gap-8 lg:items-center lg:justify-center ">
                     <div className="flex  flex-wrap items-center justify-center gap-4 w-full lg:h-[95px] ">
                         <motion.div className="flex items-center justify-center w-full h-[59px]"
                             initial={{ scale: 0.9, opacity: 0 }}
@@ -47,14 +49,23 @@ export const Curated = () => {
                             </p>
                         </button>
                     </div>
-                    <div className="flex flex-wrap items-center justify-center w-full lg:h-[395px] gap-8 lg:px-2  ">
-                        {CuratedData.map((item) => (
+                    <div className="flex  flex-wrap items-center justify-center w-full lg:h-[400px] gap-6 lg:px-1 ">
+                        {CuratedData.map((item, index) => (
                             <div
                                 key={item.id}
-                                className={`flex flex-col items-center justify-center w-full h-[400px] ${item.size} bg-[#FFFFFF] border border-[#D9D9D9] rounded-2xl gap-4 cursor-pointer`}
+                                className={`flex flex-col  items-center justify-center w-full h-[400px] lg:w-[220px] lg:h-[329px]  bg-[#FFFFFF] border border-[#D9D9D9] rounded-2xl gap-6 cursor-pointer  transition-transform duration-500 ease-out will-change-transform  ${index === 0
+                                    ? "lg:hover:scale-110"
+                                    : index === 1
+                                        ? "lg:hover:scale-115"
+                                        : index === 2
+                                            ? "lg:hover:scale-120"
+                                            : index === 3
+                                                ? "lg:hover:scale-110"
+                                                : "lg:hover:scale-105"
+                                    }`}
                             >
                                 {/* IMAGE BOX */}
-                                <div className={`flex items-center justify-center w-[300px] h-[200px] ${item.imagesize} rounded-lg`}
+                                <div className={`flex items-center justify-center w-[300px] h-[200px] lg:w-[195px] lg:h-[205px] rounded-lg`}
                                     style={{
                                         backgroundImage: `url(${item.image})`,
                                         backgroundSize: "cover",    // behaves like object-cover

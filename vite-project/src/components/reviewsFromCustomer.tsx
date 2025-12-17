@@ -8,7 +8,7 @@ export const ReviewsFromCustomer = () => {
     const [page, setPage] = useState(0); // pagination state
     const [activeArrow, setActiveArrow] = useState(""); // 
 
-    const itemsPerPage = 4; // 4 items per page
+    const itemsPerPage = 2; // 4 items per page
 
     const nextPage = () => {
         if ((page + 1) * itemsPerPage < ReviewDatas.length) {
@@ -56,89 +56,96 @@ export const ReviewsFromCustomer = () => {
 
                     {/* Top Reviews */}
                     <div
-                        className="flex items-center  flex-row w-full h-[230px] mt-8 overflow-x-auto overflow-y-hidden gap-6  "
+                        className="flex items-center justify-around   flex-row w-full h-[230px] mt-8 overflow-auto gap-6  "
                         style={{
                             WebkitOverflowScrolling: "touch",
                             scrollbarWidth: "none",
                         }}
                     >
+                        {[...ReviewDatas]
+                            .slice(page * itemsPerPage, (page + 1) * itemsPerPage * 2)
+                            .map((item, index) => (
+                                <div
+                                    key={`${item.id}-${index}`}
+                                    className="flex flex-col items-center px-4 lg:px-2 justify-center w-full lg:w-[400px] h-[230px] gap-8 bg-white shadow-md rounded-2xl marquee-inner "
+                                >
+                                    <div className="flex items-center justify-between w-[175px] h-[70px] gap-4">
+                                        <div
+                                            className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-center bg-no-repeat bg-cover"
+                                            style={{ backgroundImage: `url('${item.image}')` }}
+                                        ></div>
 
-
-                        {ReviewDatas.slice(page * itemsPerPage, (page + 1) * itemsPerPage).map((item) => (
-                            <div
-                                key={item.id}
-                                className="flex flex-col items-center px-2 justify-center w-full lg:w-[400px] h-[230px] gap-8 bg-white shadow-md rounded-2xl "
-                            >
-                                <div className="flex items-center justify-between w-[175px] h-[70px] gap-4">
-                                    <div
-                                        className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-center bg-no-repeat bg-cover"
-                                        style={{ backgroundImage: `url('${item.image}')` }}
-                                    ></div>
-
-                                    <div className="flex justify-center w-[100px] h-[50px] flex-col">
-                                        <div className="flex items-center w-full h-[26px]">
-                                            <p className="font-[poppins] font-bold text-[12px] leading-[26px] text-[#343B55]">
-                                                {item.name}
-                                            </p>
-                                        </div>
-                                        <div className="flex items-center w-full h-6">
-                                            <p className="font-[poppins] font-normal text-[10px] leading-6 text-[#12141D]">
-                                                {item.location}
-                                            </p>
+                                        <div className="flex justify-center w-[100px] h-[50px] flex-col">
+                                            <div className="flex items-center w-full h-[26px]">
+                                                <p className="font-[poppins] font-bold text-[12px] leading-[26px] text-[#343B55]">
+                                                    {item.name}
+                                                </p>
+                                            </div>
+                                            <div className="flex items-center w-full h-6">
+                                                <p className="font-[poppins] font-normal text-[10px] leading-6 text-[#12141D]">
+                                                    {item.location}
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div className="flex items-center justify-center w-full lg:w-[336px] h-[72px]">
-                                    <p className="font-[poppins] font-normal text-[12px] leading-5 text-center text-[#757575] line-clamp-3">
-                                        {item.message}
-                                    </p>
+                                    <div className="flex items-center justify-center w-full lg:w-[336px] h-[72px]">
+                                        <p className="font-[poppins] font-normal text-[12px] leading-5 text-center text-[#757575] line-clamp-3">
+                                            {item.message}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
                     </div>
 
-                    <div
-                        className="flex items-center flex-row w-full h-[230px] mt-8 overflow-x-auto overflow-y-hidden gap-6"
+                    < div
+                        className="flex items-center justify-between  flex-row w-full h-[230px] mt-8  gap-6 overflow-auto  "
                         style={{
                             WebkitOverflowScrolling: "touch",
                             scrollbarWidth: "none",
+                            
                         }}
+                            
+                        
                     >
+                        {[...ReviewDatas]
+                            .reverse()
+                            .slice(page * itemsPerPage, (page + 1) * itemsPerPage * 2)
+                            .map((item, index) => (
+                                < div
+                          
+                                    key={`${item.id}-${index}`}
+                                    className="flex flex-col items-center px-4 lg:px-2 justify-center w-full lg:w-full h-[230px] gap-8 bg-white shadow-md rounded-2xl marquee-reverse "
+                                >
+                                    <div className="flex items-center justify-between w-[175px] h-[70px] gap-4 ">
+                                        <div
+                                            className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-center bg-no-repeat bg-cover"
+                                            style={{ backgroundImage: `url('${item.image}')` }}
+                                        ></div>
 
-                        {[...ReviewDatas].reverse().slice(page * itemsPerPage, (page + 1) * itemsPerPage).map((item) => (
-                            <div
-                                key={item.id}
-                                className="flex flex-col items-center px-4 justify-center w-full lg:w-[400px] h-[230px] gap-8 bg-white shadow-md rounded-2xl"
-                            >
-                                <div className="flex items-center justify-between w-[175px] h-[70px] gap-4">
-                                    <div
-                                        className="flex items-center justify-center w-[70px] h-[70px] rounded-full bg-center bg-no-repeat bg-cover"
-                                        style={{ backgroundImage: `url('${item.image}')` }}
-                                    ></div>
-
-                                    <div className="flex justify-center w-[100px] h-[50px] flex-col">
-                                        <div className="flex items-center w-full h-[26px]">
-                                            <p className="font-[poppins] font-bold text-[12px] leading-[26px] text-[#343B55]">
-                                                {item.name}
-                                            </p>
-                                        </div>
-                                        <div className="flex items-center w-full h-6">
-                                            <p className="font-[poppins] font-normal text-[10px] leading-6 text-[#12141D]">
-                                                {item.location}
-                                            </p>
+                                        <div className="flex justify-center w-[100px] h-[50px] flex-col">
+                                            <div className="flex items-center w-full h-[26px]">
+                                                <p className="font-[poppins] font-bold text-[12px] leading-[26px] text-[#343B55]">
+                                                    {item.name}
+                                                </p>
+                                            </div>
+                                            <div className="flex items-center w-full h-6">
+                                                <p className="font-[poppins] font-normal text-[10px] leading-6 text-[#12141D]">
+                                                    {item.location}
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
 
-                                <div className="flex items-center justify-center w-full lg:w-[336px] h-[72px]">
-                                    <p className="font-[poppins] font-normal text-[13px] leading-5 text-center text-[#757575] line-clamp-3">
-                                        {item.message}
-                                    </p>
+                                    <div className="flex items-center justify-center w-full lg:w-[336px] h-[72px]">
+                                        <p className="font-[poppins] font-normal text-[13px] leading-5 text-center text-[#757575] line-clamp-3">
+                                            {item.message}
+                                        </p>
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            ))}
                     </div>
+
 
                     {/* Pagination Arrows */}
                     <div className="flex items-center justify-center w-full mt-8">

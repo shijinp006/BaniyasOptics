@@ -77,6 +77,7 @@
 .gradient-hover-underline:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
+
 .gradient-hover-underline:hover {
   background-clip: text;
   -webkit-background-clip: text;
@@ -95,4 +96,46 @@
 
 .myfont {
   font-family: "ClashGrotesk", sans-serif;
+}
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* FIRST ROW → auto scroll LEFT */
+.marquee-inner {
+  display: flex;
+  width: 100%;
+  animation: marquee-left 4s linear infinite;
+  will-change: transform;
+}
+
+/* SECOND ROW → auto scroll RIGHT */
+.marquee-reverse {
+  display: flex;
+  width: 100%;
+  animation: marquee-right 4s linear infinite;
+  will-change: transform;
+}
+
+/* IMPORTANT: cards must not shrink */
+.marquee-inner>*,
+.marquee-reverse>* {
+  flex-shrink: 0;
 }
