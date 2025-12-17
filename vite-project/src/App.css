@@ -77,7 +77,6 @@
 .gradient-hover-underline:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
-
 .gradient-hover-underline:hover {
   background-clip: text;
   -webkit-background-clip: text;
@@ -88,12 +87,12 @@
 
 @font-face {
   font-family: 'ClashGrotesk';
-  src: url('./assets/fonts/ClashGrotesk-Bold.otf') format('otf');
-  font-weight: 100 900;
-  font-style: bold;
+  src: url('./assets/fonts/ClashGrotesk-Bold.otf') format('woff');
+  font-weight: 700;
+  font-style: normal;
   font-display: swap;
 }
 
 .myfont {
-  font-family: "ClashGrotesk", "Archivo Black";
+  font-family: "ClashGrotesk", sans-serif;
 }
