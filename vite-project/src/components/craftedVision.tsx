@@ -4,7 +4,7 @@ import bgImage from "../assets/whitebg2.webp"
 import { motion } from "framer-motion";
 export const CraftedVision = () => {
     return (<>
-        <div className="flex flex-wrap items-center justify-center w-full min-h-screen lg:py-10 "
+        <div className="flex flex-wrap items-center justify-center w-full min-h-screen py-10 "
             style={{
                 backgroundImage: `url(${bgImage})`,
                 backgroundSize: "cover",      // same as object-cover
