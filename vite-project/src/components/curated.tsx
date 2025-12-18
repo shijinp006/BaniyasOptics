@@ -13,7 +13,7 @@ export const Curated = () => {
                 backgroundRepeat: "no-repeat",
             }}>
             <div className="flex lg:items-center lg:justify-center w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-7.5 ">
-                <div className="flex flex-col w-full gap-8 lg:items-center lg:justify-center ">
+                <div className="flex flex-col items-center w-full gap-8 lg:justify-center ">
                     <div className="flex  flex-wrap items-center justify-center gap-4 w-full lg:h-[95px] ">
                         <motion.div className="flex items-center justify-center w-full h-[59px]"
                             initial={{ scale: 0.9, opacity: 0 }}
@@ -103,7 +103,7 @@ export const Curated = () => {
                         ))}
                     </div>
 
-                    <button className="flex items-center justify-center bg-[#00B1C6] rounded-2xl  w-full lg:w-[300px] h-14 cursor-pointer">
+                    <button className="flex items-center justify-center bg-[#00B1C6] rounded-2xl  w-[200px] lg:w-[300px] h-14 cursor-pointer">
                         <p
                             className="font-[montserrat] font-bold text-[14px] leading-6 tracking-[0%] text-center align-middle text-[#F1F1F1]"
                         >

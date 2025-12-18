@@ -27,7 +27,7 @@ export const AboutUs = () => {
 
                         </div>
                     </div>
-                    <div className="flex flex-col justify-center w-full lg:w-[600px] lg:h-[280px] gap-4 ">
+                    <div className="flex flex-col justify-center lg:items-start items-center w-full lg:w-[600px] lg:h-[280px] gap-4 ">
                         <div className="flex flex-col items-center w-full gap-3 ">
                             <motion.div className="flex items-center w-full"
                                 initial={{ scale: 0.9, opacity: 0 }}
@@ -51,7 +51,7 @@ export const AboutUs = () => {
 
                         </div>
 
-                        <button className="flex items-center justify-center lg:w-[300px] h-[50px] rounded-2xl bg-[#00B1C6] cursor-pointer ">
+                        <button className="flex items-center justify-center w-[200px] lg:w-[300px] h-[50px] rounded-2xl bg-[#00B1C6] cursor-pointer ">
                             <p className="font-[montserrat] font-bold text-xs text-white">View Full Story</p>
                         </button>
                     </div>
