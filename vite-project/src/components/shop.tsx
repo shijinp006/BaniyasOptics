@@ -10,7 +10,7 @@ import { SortBy } from "../shopDatas/fliter"
 import Icon from "../assets/downArrow.svg"
 import { Card } from "../shopDatas/card"
 import { cardData } from "../shopDatas/cardData"
-import { NotFound } from "./404Notfound"
+// import { NotFound } from "./404Notfound"
 
 export const Shop = () => {
     const [selectedItem, setSelectedItem] = useState<number>(categories[0].id)
