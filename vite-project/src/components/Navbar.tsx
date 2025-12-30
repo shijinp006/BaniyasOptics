@@ -6,11 +6,23 @@ import cartIcon from "../assets/cart.svg";
 import userIcon from "../assets/user.svg";
 import { HiOutlineMenu } from "react-icons/hi";
 import { menuItems } from "../menuItems/menuItems";
+import { Link, useLocation } from "react-router-dom";
 
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const menuRef = useRef<HTMLUListElement>(null!);
+  const location = useLocation();
+
+
+
+  const routeMap: any = {
+    Home: "/home",
+    Shop: "/shop",
+  
+  };
+
 
 
   // Close menu if clicked outside
@@ -31,6 +43,7 @@ export const Navbar = () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [menuOpen]);
+
 
   return (
     <>
@@ -80,17 +93,30 @@ export const Navbar = () => {
               </div>
 
               <ul className="flex flex-wrap gap-6">
-                {menuItems.map((item, index) => (
+                {menuItems.map((item: any) => (
                   <li
-                    key={index}
+                    key={item.id}
                     className={`flex items-center justify-center w-[${item.width}] h-8`}
+                    onClick={() => {
+                      setMenuOpen(false);
+
+
+                    }}
                   >
-                    <p
-                      className={`gradient-hover-underline text-[16px] leading-[100%] tracking-[0%] align-middle text-[#F3F3F3] font-[montserrat] ${item.isBold ? "font-bold" : ""
-                        }`}
+
+                    <Link
+                      to={routeMap[item.text]}
+                      onClick={() => {
+
+                      }}
+                      className={`gradient-hover-underline text-[16px] leading-[100%] tracking-[0%] align-middle text-[#F3F3F3] font-[montserrat] ${routeMap[item.text] === location.pathname ? "font-bold" : ""
+                        }
+                        `}
                     >
                       {item.text}
-                    </p>
+                    </Link>
+
+
                   </li>
                 ))}
               </ul>
@@ -141,14 +167,28 @@ export const Navbar = () => {
                   ✕
                 </button>
 
-                {menuItems.map((item, index) => (
+                {menuItems.map((item: any) => (
                   <li
-                    key={index}
-                    className={`text-[#F3F3F3] font-[montserrat] text-xl cursor-pointer text-center ${index === 0 ? "font-bold" : ""
-                      }`}
-                    onClick={() => setMenuOpen(false)}
+                    key={item.id}
+                    className={`text-[#F3F3F3] font-[montserrat] text-xl cursor-pointer text-center ${routeMap[item.text] === location.pathname ? "font-bold" : ""
+                      }
+                      `}
+                    onClick={() => {
+                      setMenuOpen(false);
+
+                    }}
                   >
-                    {item.text}
+                    <Link
+                      to={routeMap[item.text]}
+                      onClick={() => {
+
+                      }}
+                      className={`gradient-hover-underline text-[16px] leading-[100%] tracking-[0%] align-middle text-[#F3F3F3] font-[montserrat] ${routeMap[item.text] === location.pathname ? "font-bold" : ""
+                        }
+                        `}
+                    >
+                      {item.text}
+                    </Link>
                   </li>
                 ))}
               </motion.ul>

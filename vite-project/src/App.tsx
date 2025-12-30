@@ -1,12 +1,20 @@
-import { Display } from './Display'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./Home";
+import { Shop } from "./components/shop";
+
+import "./App.css";
 
 function App() {
-  return (<>
-    <div >
-        <Display />
-    </div>
-  </>)
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/home" element={<Home />} />
+        <Route path="/shop" element={<Shop />} />
+      
+     
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;

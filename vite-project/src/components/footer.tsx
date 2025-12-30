@@ -5,7 +5,7 @@ import { footerPolicies } from "../footerDatas/footerDatas"
 import { footerIcons } from "../footerDatas/footerIcons"
 export const Footer = () => {
     return (<>
-        <footer className="flex items-center justify-center w-full min-h-screen bg-[#222222] mt-8 lg:mt-0 lg:py-10 ">
+        <footer className="flex items-center justify-center w-full h-[784px] bg-[#222222]  lg:py-10 ">
             <div className="flex flex-col items-center justify-center w-full px-4 mx-auto max-w-7xl md:px-6 lg:px-7.5">
 
                 <div className="flex flex-col w-full lg:justify-between lg:flex-row lg:px-25 lg:mt-6 ">
@@ -79,7 +79,7 @@ export const Footer = () => {
 
                     </div>
                     <div className=" hidden lg:flex items-center justify-center w-full lg:h-[117px]">
-                        <div className="flex items-center justify-between w-full h-7">
+                        <div className="flex items-center justify-between w-full ">
                             {footerPolicies.map(item => (
                                 <p
                                     key={item.id}

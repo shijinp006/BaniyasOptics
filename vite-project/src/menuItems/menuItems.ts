@@ -1,7 +1,7 @@
 export const menuItems = [
-  { text: "Home", width: "67px", isBold: true },
-  { text: "Shop", width: "58px", isBold: false },
-  { text: "Service & Brands", width: "150px", isBold: false },
-  { text: "Blogs", width: "62px", isBold: false },
-  { text: "About us", width: "89px", isBold: false },
-]
+  { id: 1, text: "Home", width: "67px" },
+  { id: 2, text: "Shop", width: "58px" },
+  { id: 3, text: "Service & Brands", width: "150px" },
+  { id: 4, text: "Blogs", width: "62px" },
+  { id: 5, text: "About us", width: "89px" },
+];

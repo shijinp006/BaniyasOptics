@@ -10,7 +10,7 @@ import { ReviewsFromCustomer } from "./components/reviewsFromCustomer"
 import { PerfectedFocus } from "./components/perfectedFocus"
 import { ContactUS } from "./components/contacts"
 import { Footer } from "./components/footer"
-export const Display = () => {
+export const Home = () => {
     return (<>
         <div className="w-full">
             <Navbar />
