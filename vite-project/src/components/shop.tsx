@@ -21,10 +21,6 @@ export const Shop = () => {
     const [filterData, setFilterData] = useState<any>([])
     const [CardData, setCardData] = useState<any>([])
 
-
-
-
-
     useEffect(() => {
         setCardData(cardData);
         setFilterData(cardData)
@@ -245,7 +241,7 @@ export const Shop = () => {
                         </div>
                         {totalProducts === 0 ? (
                             <div className="flex items-center justify-center w-full py-10">
-                                <NotFound />
+                                No matching results found. Please try a different search.
                             </div>
                         ) : (
 
